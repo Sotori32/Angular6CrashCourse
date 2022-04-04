@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { DataService } from '../data.service';
 import { Observable } from 'rxjs';
 
@@ -10,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class UsersComponent implements OnInit {
 
-  users$: Object;
+  users$: any = '';
 
   constructor(private data: DataService) { }
 
