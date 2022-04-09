@@ -9,13 +9,13 @@ import { Observable } from 'rxjs';
 })
 export class UsersComponent implements OnInit {
 
-  users$: any = '';
+  users: any = '';
 
   constructor(private data: DataService) { }
 
   ngOnInit() {
     this.data.getUsers().subscribe(
-      data => this.users$ = data
+      data => this.users = data
     );
   }
 
